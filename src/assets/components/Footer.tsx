@@ -66,32 +66,7 @@ const footer = () => {
 
 
           {/* Product */}
-          <div>
-            <h3 className="font-semibold mb-4">
-              Product
-            </h3>
-
-            <ul className="space-y-3 text-sm text-gray-500">
-              <li>
-                <a href="#" className="hover:text-black">
-                  Technologies
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-black">
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-black">
-                  Features
-                </a>
-              </li>
-            </ul>
-          </div>
-
+          
 
           {/* Company */}
           <div>
