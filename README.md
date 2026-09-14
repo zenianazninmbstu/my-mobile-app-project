@@ -32,7 +32,7 @@ Remove individual technologies or remove all selected technologies with toast no
 
 ## 1. What is JSX, and why is it used in React?
 
-JSX is a syntax that lets us write HTML-like code inside JavaScript or TypeScript. React uses JSX to create and describe the user interface.
+jsx is javaScript xtension.Bcause is very easier to other thechnoligy.
 
 ## 2. What is the difference between props and state?
 
