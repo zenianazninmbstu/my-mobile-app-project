@@ -39,7 +39,7 @@ const Nav = () => {
 
         <div className="hidden md:flex max-w-7xl mx-auto justify-between items-center ">
 
-       
+        <img src={logo} alt="logo" />
 
             
         <ul className="list-none p-0 m-0 flex gap-4 items-center text-sm">

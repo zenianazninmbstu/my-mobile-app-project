@@ -171,15 +171,16 @@ return (
 {/* your stack */}
 
 
-<div className="w-full lg:w-[260px] lg:flex-shrink-0 self-start border border-gray-200 rounded-2xl p-4">
+<div className="w-full lg:w-[260px] min-h-[320px] lg:flex-shrink-0 self-start border border-gray-200 rounded-2xl p-4">
   <h3 className="text-xl font-bold">
     Your Stack
   </h3>
 
- <p className="text-gray-500 text-sm mt-2">
-  No technology selected yet.
+<p className="text-gray-500 text-sm mt-2">
+  {selectedTechnologies.length === 0
+    ? "No technology selected yet."
+    : `${selectedTechnologies.length} Technology Selected`}
 </p>
-
   {selectedTechnologies.map((technology) => (
     <div
       key={technology.id}
@@ -218,7 +219,7 @@ return (
   ))}
 
   {selectedTechnologies.length === 0 && (
-  <div className="mt-4 w-full border border-dashed border-gray-300 rounded-xl py-8 text-center">
+  <div className="mt-20 w-full border border-dashed border-gray-300 rounded-xl py-8 text-center">
     <p className="text-sm font-medium text-gray-600">
       Your Stack is Empty
     </p>
