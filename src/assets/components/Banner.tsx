@@ -35,7 +35,7 @@ const Banner = () => {
                 </div>
                 </div>
 
-                
+                <div className="w-1/2 flex justify-end" >
 
                     <img src={banner} alt="banner" />
                 </div>
