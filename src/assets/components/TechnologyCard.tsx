@@ -93,7 +93,7 @@ return (
 
 <div className="flex flex-col lg:flex-row gap-8 mt-8">
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1 flex items-start">
     {technologies.map((technology) => (
     <div
       key={technology.id}
@@ -171,14 +171,14 @@ return (
 {/* your stack */}
 
 
-<div className="w-full lg:w-[260px] lg:flex-shrink-0 border border-gray-200 rounded-2xl p-4">
+<div className="w-full lg:w-[260px] lg:flex-shrink-0 self-start border border-gray-200 rounded-2xl p-4">
   <h3 className="text-xl font-bold">
     Your Stack
   </h3>
 
-  <p className="text-gray-500 text-sm mt-2">
-    {selectedTechnologies.length} Technology Selected
-  </p>
+ <p className="text-gray-500 text-sm mt-2">
+  No technology selected yet.
+</p>
 
   {selectedTechnologies.map((technology) => (
     <div
@@ -218,13 +218,12 @@ return (
   ))}
 
   {selectedTechnologies.length === 0 && (
-    <div className="text-center py-10 text-gray-400">
-      <p>No technologies selected yet.</p>
-    </div>
-
-
-
-  )}
+  <div className="mt-4 w-full border border-dashed border-gray-300 rounded-xl py-8 text-center">
+    <p className="text-sm font-medium text-gray-600">
+      Your Stack is Empty
+    </p>
+  </div>
+)}
 
 
   {selectedTechnologies.length > 0 && (

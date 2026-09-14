@@ -57,11 +57,11 @@ Conditional rendering means showing different UI depending on a condition.
 
 I used it to show the empty stack message when no technology has been selected:
 
-```tsx
+tsx
 {selectedTechnologies.length === 0 && (
   <p>Your stack is empty.</p>
 )}
-```
+
 
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
