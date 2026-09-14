@@ -44,6 +44,7 @@ useEffect(() => {
   );
 
   if (alreadySelected) {
+    console.log("Warning test");
     toast.warning(`${technology.name} is already in your stack!`);
     return;
   }
@@ -153,7 +154,8 @@ return (
   disabled={selectedTechnologies.some(
     (item) => item.id === technology.id
   )}
-  className="w-full mt-5 py-2 rounded-lg bg-black text-white font-medium disabled:bg-gray-300 disabled:text-gray-500"
+  className="w-full mt-5 py-2 rounded-lg bg-black text-white font-medium
+   disabled:bg-gray-300 disabled:text-gray-500"
 >
   {selectedTechnologies.some(
     (item) => item.id === technology.id

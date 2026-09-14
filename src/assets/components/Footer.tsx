@@ -1,6 +1,9 @@
 
 import logo from "../logo-text.png";
 
+
+
+
 const footer = () => {
     return (
         <div>
@@ -21,9 +24,9 @@ const footer = () => {
                 alt="logo"
               className="w-24 h-24 object-contain"
               />
-
-             
             </div>
+             
+            
 
             <p className="text-gray-500 text-sm leading-6 mt-4 max-w-sm">
               Build smarter projects with the right technologies.
@@ -172,11 +175,7 @@ const footer = () => {
 
       </div>
     </footer>
-  );
-
-
-
-        </div>
+  </div>
     );
 };
 
